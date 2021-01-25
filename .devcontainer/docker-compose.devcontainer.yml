@@ -1,0 +1,22 @@
+#-------------------------------------------------------------------------------------------------------------
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
+#-------------------------------------------------------------------------------------------------------------
+
+version: '3.7'
+services:
+  demo-401:
+    container_name: demo-401
+    image: demo-401
+    build:
+      context: .
+      dockerfile: devcontainer.Dockerfile
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - 8080:8080
+    networks:
+      - default
+networks:
+  default:

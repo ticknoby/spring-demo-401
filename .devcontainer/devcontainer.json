@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.101.1/containers/docker-existing-docker-compose
+{
+  "dockerComposeFile": [
+    "./docker-compose.devcontainer.yml",
+  ],
+  "service": "demo-401",
+  "workspaceFolder": "/workspace",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "java.home": "/docker-java-home",
+  },
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "gabrielbb.vscode-lombok",
+  ],
+}
