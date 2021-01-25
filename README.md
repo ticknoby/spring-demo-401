@@ -5,10 +5,12 @@ Project generated using spring initializr. https://start.spring.io/
 ## Building the application
 `gradle build`
 
+A .war file will be created at `build/libs/demo401-0.0.1-SNAPSHOT.war` 
+
 ## Running the application
 `gradle bootRun`
 
-TODO: build war
+or deploy the .war to tomcat
 
 ## Checking responses
 
